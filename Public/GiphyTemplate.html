@@ -1,0 +1,36 @@
+﻿<div align="center" style="position:relative;">
+    <input type="text" name="gifSearch" ng-model="Phrase" ng-minlength="3" ng-maxlength="100" ng-pattern="/[a-zA-Z+^ ]/" ng-trim="false" style='width:520px;height:35px;border-radius:0px;padding-left:5px;padding-right:15px;font-size:14px;' required></input>
+    &nbsp;&nbsp;
+    <input type="button" ng-click="GifSearch()" value="Submit"></input>
+    <div role="alert">
+        <span class="error" ng-show="myForm.input.$error.required">
+            Required!
+        </span>
+        <span class="error" ng-show="myForm.input.$error.number">
+            Not valid number!
+        </span>
+    </div>
+</div>
+<br />
+<!--<div>
+    <img ng-repeat="gif in giphys"
+         ng-mouseover="hover()"
+         ng-mouseleave="leave()"
+         ng-src="{{gif && gif.fxHiStillImgUrl ||''}}"
+         data-actionimg="{{gif.fxHiImgUrl}}"
+         alt="{{gif.id}}"
+         height="{{gif.height}}"
+         width="{{gif.width}}">
+    </img>
+</div>-->
+
+
+
+
+<div class="row">
+    <div class="col-lg-4 col-sm-6 col-xs-12" ng-repeat="gif in giphys">
+        <a href="#" class="thumbnail">
+            <img ng-src="{{gif && gif.fxHiStillImgUrl ||''}}" style="height:300px !important" ng-mouseover="hover()" ng-mouseleave="leave()" width="400"></img>
+        </a>
+    </div>
+</div>
