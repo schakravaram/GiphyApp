@@ -1,4 +1,5 @@
-<center> <h1>*Giphy App*</h1> </center>
+*Giphy App*
+===========
   Fetches the images from Giphy Repository as per the search criteria provided
 ------------------------------------------------------------------------------
 ```Node.js
@@ -19,7 +20,7 @@ Installation Steps
 `uglify` actions and will open up the application automatically with in the browser
 
 
-### *Note:* 
+## *Note:* 
 Initially there wont be *`'UAT'`* folder with the downloaded app once you are done with the above *`npm install`* 
 and *`gulp`* command executions it will create a UAT folder and will deploy all the dependencies, html files and 
 node startup file into it so that if all well then the same folder can be deployed directly to production.  
