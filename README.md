@@ -14,7 +14,7 @@ Installation Steps
 ------------------
 1.  Install [Node.JS](https://nodejs.org/dist/v4.2.4/node-v4.2.4-x64.msi) 
 2.  Download and extract the files to any of the folder
-3.  Open command prompt and cd(change directory) to the folder where the files were extracted 
+3.  Open command prompt and type cd(change directory) to the folder where the files were extracted 
 4.  Type `npm install` and hit enter it will then take couple of mins to install all the node pkg dependencies
 5.  Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, 
 `uglify` actions and will open up the application automatically with in the browser
