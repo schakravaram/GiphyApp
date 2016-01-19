@@ -8,6 +8,7 @@ The App Users following Node Modules
 2) Bower
 3) Browserify
 4) Uglify
+5) Sass
 ```
 
 Installation Steps
@@ -16,7 +17,7 @@ Installation Steps
 2.  Download and extract the files to any of the folder
 3.  Open command prompt and type cd(change directory) to the folder where the files were extracted 
 4.  Type `npm install` and hit enter it will then take couple of mins to install all the node pkg dependencies
-5.  Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, 
+5.  Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, `sass`, 
 `uglify` actions and will open up the application automatically with in the browser
 
 
