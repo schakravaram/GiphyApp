@@ -19,5 +19,7 @@ Installation Steps#
 5: Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, `uglify` actions and will open up the application automatically with in the browser
 
 ```
-Note: Initially there wont be 'UAT' folder with the downloaded app once you are done with the above `npm install` and `gulp` command executions it will create a UAT folder and will deploy all the dependencies, html files and node startup file into it so that if all well then the same folder can be deployed directly to production. 
+Note: Initially there wont be 'UAT' folder with the downloaded app once you are done with the above `npm install` and `gulp` 
+command executions it will create a UAT folder and will deploy all the dependencies, html files and node startup file into 
+it so that if all well then the same folder can be deployed directly to production. 
 ```
