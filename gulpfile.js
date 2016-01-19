@@ -1,4 +1,5 @@
 ﻿
+
 var gulp		= require('gulp'),    
 	browserify	= require('browserify'),     
 	uglify		= require('gulp-uglify'),     
@@ -96,14 +97,23 @@ gulp.task('server', function (cb) {
     });
 
 });
+ 
+gulp.task('csswatch', function (cb) {
+									watchpkg('./**/*.css', function () {
+															gulp.src('./**/*.css')
+																.pipe(watchpkg('./**/*.css'))
+																.on('end', cb);
+														  });
+									});  
 
-gulp.task('jswatch',function(){  
-	
-    return gulp.src(watch.jsfiles)
-               .pipe(watchpkg(watch.jsfiles))
-               .pipe(gulp.dest('build'));  	
+gulp.task('jswatch', function (cb) {
+									watchpkg('./**/*.js', function () {
+															gulp.src('./**/*.js')
+																.pipe(watchpkg('./**/*.js'))
+																.on('end', cb);
+														  });
+									}); 
 
-});
 
 gulp.task('build', function (cb) {
 
