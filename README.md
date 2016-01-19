@@ -2,7 +2,7 @@
 ==========
   Fetches the images from Giphy Repository as per the search criteria provided
 ------------------------------------------------------------------------------
-```
+```Node.js
 The App Users following Node Modules
 1) Gulp ( Its similar to Grunt but much efficient than Grunt)
 2) Bower
@@ -21,8 +21,7 @@ Installation Steps
 
 
 ### *Note:* 
-```
 Initially there wont be *'UAT'* folder with the downloaded app once you are done with the above **npm install** 
 and **gulp** command executions it will create a UAT folder and will deploy all the dependencies, html files and 
 node startup file into it so that if all well then the same folder can be deployed directly to production.  
-```
+
