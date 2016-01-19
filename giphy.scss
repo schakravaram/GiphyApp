@@ -1,0 +1,48 @@
+
+$font-type :  arial,sans-serif;
+$body-color : #222;
+$body-pad-top : 50px;
+
+
+body {
+  padding-top: $body-pad-top;
+  font-family: $font-type;
+  color: $body-color;
+}
+
+.gifHeadrImg {
+  width:150px;
+}	
+
+.gifimg {			
+  height: 300px !important;
+  width: 400px;	
+}	
+		
+.txtBox {
+  width:520px;
+  height:35px;
+  border-radius:0px;
+  padding-left:5px;
+  padding-right:15px;
+  font-size:14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

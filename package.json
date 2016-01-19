@@ -1,7 +1,7 @@
 {
   "name": "NodeAngularApp",
   "version": "0.0.0",
-  "description": "Node Angular App",
+  "description": "Giphy Repository App - Pulls all the images from Giphy.com repository as per the search criteria provided",
   "main": "MainGiphy.js",
   "author": {
     "name": "schakravaram",
@@ -9,29 +9,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:schakravaram/EvkNode.git"
+    "url": "git+ssh://git@github.com:schakravaram/GiphyApp.git"
   },
   "license": "MIT",
   "dependencies": {
-    "bower": ">=1.7.2",
-    "express": ">=4.7.2",
+    "angular": "^1.4.8",
+    "browserify": "^13.0.0",
     "gulp": ">=3.9.0",
-    "gulp-bower": ">=0.0.1",
-    "gulp-bower-files": ">=0.2.7",
-    "gulp-browserify": ">=0.5.1",
     "gulp-install": "^0.6.0",
-    "gulp-notify": ">=2.2.0",
-    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
     "gulp-watch": "^4.3.5",
     "http-server": ">=0.8.4",
-    "main-bower-files": "^2.11.1",
     "opener": "^1.4.1",
     "request": ">=2.67.0",
     "run-sequence": "^1.1.5",
     "serve-favicon": ">=2.3.0",
+    "util": "^0.10.3",
     "vinyl-buffer": ">=1.0.0",
-    "vinyl-source-stream": ">=1.1.0",
-	"browserify":"^13.0.0",
-	"angular": "^1.4.8"
+    "vinyl-source-stream": ">=1.1.0"
   }
 }

@@ -1,50 +1,16 @@
 ﻿<!DOCTYPE html>
 <html ng-app="gifApp" xmlns="http://www.w3.org/1999/xhtml">
 <head> 
-    <title>Giphy Shadow</title>
-    <link rel='stylesheet prefetch' href='./bower_components/bootstrap/dist/css/bootstrap.min.css'>
-    <!--<script src="./bower_components/angular/angular.min.js"></script>-->
-    <!--<script src="https://cdn.socket.io/socket.io-1.4.3.js"></script>-->
-    <script src="./Scripts/bundle.js"></script>
-    <!--<script src="./Scripts/controller.js"></script>
-    <script src="./Scripts/giphyService.js"></script>
-    <script src="./Scripts/directive.js"></script>-->
-
-    <style>
-        body {
-            padding-top: 50px;
-        }
-
-        .row {
-            margin-bottom: 20px;
-        }
-
-
-        /*.thumbnail {
-            margin-bottom: 7px;
-        }
-
-        .thumbnail {
-            display: block;
-            padding: 4px;
-            margin-bottom: 20px;
-            line-height: 1.42857143;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            -webkit-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
-        }*/
-
-    </style>
-
+    <title>Giphy Repository Image Picker</title>
+    <link rel='stylesheet prefetch' href='./bower_components/bootstrap/dist/css/bootstrap.min.css'></link>
+	<link rel='stylesheet prefetch' href='./css/giphy.css'></link>
+    <script src="./Scripts/bundle.js"></script>  
 </head>
-<body ng-controller="giphyCntrl" style="color: #222; font-family: arial,sans-serif; ">
-    <form ng-submit="GifSearch()">
+<body ng-controller="giphyCntrl">
+    <form name="myForm" ng-submit="GifSearch()">
         <div align="center" style="padding:5px;">
-            <img src="./Images/giphy.png" alt="Giphy.com" style="width:150px"/>
+            <img src="./Images/giphy.png" alt="Giphy.com" class="gifHeadrImg"/>
         </div>
-
         <giphy-tag Search="Phrase"></giphy-tag>
     </form>
 </body>
