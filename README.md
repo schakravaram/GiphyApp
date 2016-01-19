@@ -1,7 +1,6 @@
-  Giphy App 
-=============
-  Fetches the images from Giphy Repository as per the search 
-                    criteria provided
+                               Giphy App 
+==========================================================================
+  Fetches the images from Giphy Repository as per the search criteria provided
 ------------------------------------------------------------------------------
 ```
 The App Users following Node Modules
