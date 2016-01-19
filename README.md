@@ -7,7 +7,7 @@ The App Users following Node Modules
 1) Gulp ( Its similar to Grunt but much efficient than Grunt)
 2) Bower
 3) Browserify
-4) Uglif
+4) Uglify
 ```
 
 Installation Steps#
@@ -16,7 +16,8 @@ Installation Steps#
 2: Download and extract the files to any of the folder
 3: Open command prompt and ycd(change directory) to the folder where the files were extracted 
 4: Type `npm install` and hit enter it will then take couple of mins to install all the node pkg dependencies
-5: Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, `uglify` actions and will open up the application automatically with in the browser
+5: Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, 
+`uglify` actions and will open up the application automatically with in the browser
 
 ```
 Note: Initially there wont be 'UAT' folder with the downloaded app once you are done with the above `npm install` 
