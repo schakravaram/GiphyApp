@@ -1,5 +1,4 @@
--> *Giphy App* <- 
-=================
+<center> <h1>*Giphy App*</h1> </center>
   Fetches the images from Giphy Repository as per the search criteria provided
 ------------------------------------------------------------------------------
 ```Node.js
