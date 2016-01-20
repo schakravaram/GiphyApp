@@ -1,4 +1,5 @@
 ﻿
+
 var gulp		= require('gulp'),    
 	browserify	= require('browserify'),     
 	uglify		= require('gulp-uglify'),     
@@ -9,6 +10,8 @@ var gulp		= require('gulp'),
     watchpkg	= require('gulp-watch'),
     exec		= require('child_process').exec,
 	runSequence = require('run-sequence'),
+	jshint		= require('gulp-jshint'),
+	stylish		= require('jshint-stylish'),
     path =   {
                 sass:       './resources/sass',
                 pkg:        './package.json',
@@ -19,8 +22,8 @@ var gulp		= require('gulp'),
 		        brw5Dest:   './UAT/public/Scripts',
 				cssDest:	'./UAT/public/css'
             },
-    watch =  {
-		        jsfiles:	'./UAT/**/*.js',
+    watchjs =  {
+		        jsfiles:	['./Public/*.js','./UAT/*.js','./NodeScripts/*.js'],
 	            cssfiles:	'./UAT/**/*.css'
 	         };
 
@@ -97,13 +100,23 @@ gulp.task('server', function (cb) {
 
 });
 
-gulp.task('jswatch',function(){  
-	
-    return gulp.src(watch.jsfiles)
-               .pipe(watchpkg(watch.jsfiles))
-               .pipe(gulp.dest('build'));  	
+  
+gulp.task('csswatch', function () {
+										gulp.watch('**/*.css', ['pkgs']);
+								  }); 
 
-});
+
+gulp.task('jshintw', function () {
+									gulp.src(watchjs.jsfiles)
+										.pipe(jshint())
+										.pipe(jshint.reporter(stylish));
+								  });   
+
+
+gulp.task('jswatch', function (cb) {
+									  gulp.watch(watchjs.jsfiles, ['jshintw']);
+								   }); 
+
 
 gulp.task('build', function (cb) {
 

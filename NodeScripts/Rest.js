@@ -22,4 +22,4 @@ module.exports = function (app, express) {
             res.sendfile('./Index.html');
         });
 
-}
+};
