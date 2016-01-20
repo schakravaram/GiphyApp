@@ -10,7 +10,10 @@ The App Users following Node Modules
 4) Uglify
 5) Sass
 6) Watch
+<<<<<<< HEAD
 7) JS Hint
+=======
+>>>>>>> origin/master
 ```
 
 Installation Steps
@@ -19,7 +22,12 @@ Installation Steps
 2.  Download and extract the files to any of the folder
 3.  Open command prompt and type cd(change directory) to the folder where the files were extracted 
 4.  Type `npm install` and hit enter it will then take couple of mins to install all the node pkg dependencies
+<<<<<<< HEAD
 5.  Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, `sass`, `watch`, `jshint`, `uglify` actions and will open up the application automatically with in the browser.
+=======
+5.  Once all the dependencies are installed just type in `gulp` it will take care of running `bower`, `browserify`, `pipe`, `sass`, `watch`, `uglify` actions and will open up the application automatically with in the browser.
+
+>>>>>>> origin/master
 
 ## *Note:* 
 Initially there wont be *`'UAT'`* folder with the downloaded app once you are done with the above *`npm install`* 

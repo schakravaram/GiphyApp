@@ -99,7 +99,24 @@ gulp.task('server', function (cb) {
     });
 
 });
+ 
+gulp.task('csswatch', function (cb) {
+									watchpkg('./**/*.css', function () {
+															gulp.src('./**/*.css')
+																.pipe(watchpkg('./**/*.css'))
+																.on('end', cb);
+														  });
+									});  
 
+gulp.task('jswatch', function (cb) {
+									watchpkg('./**/*.js', function () {
+															gulp.src('./**/*.js')
+																.pipe(watchpkg('./**/*.js'))
+																.on('end', cb);
+														  });
+									}); 
+
+<<<<<<< HEAD
   
 gulp.task('csswatch', function () {
 										gulp.watch('**/*.css', ['pkgs']);
@@ -117,6 +134,8 @@ gulp.task('jswatch', function (cb) {
 									  gulp.watch(watchjs.jsfiles, ['jshintw']);
 								   }); 
 
+=======
+>>>>>>> origin/master
 
 gulp.task('build', function (cb) {
 
