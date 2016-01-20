@@ -115,8 +115,6 @@ gulp.task('jswatch', function (cb) {
 																.on('end', cb);
 														  });
 									}); 
-
-<<<<<<< HEAD
   
 gulp.task('csswatch', function () {
 										gulp.watch('**/*.css', ['pkgs']);
@@ -133,9 +131,6 @@ gulp.task('jshintw', function () {
 gulp.task('jswatch', function (cb) {
 									  gulp.watch(watchjs.jsfiles, ['jshintw']);
 								   }); 
-
-=======
->>>>>>> origin/master
 
 gulp.task('build', function (cb) {
 
